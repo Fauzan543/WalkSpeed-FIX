@@ -1,0 +1,505 @@
+--Sorry Error FIX Cant Walk speed
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MFrame = Instance.new("Frame")
+local SpeedBox = Instance.new("TextBox")
+local UICorner = Instance.new("UICorner")
+local ApplyButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local Normal = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local MFrame2 = Instance.new("Frame")
+local Button1 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
+local Button3 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Button4 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Button5 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local Button2 = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local NormalW = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MFrame.Name = "MFrame"
+MFrame.Parent = ScreenGui
+MFrame.BackgroundColor3 = Color3.fromRGB(126, 156, 255)
+MFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MFrame.BorderSizePixel = 0
+MFrame.Position = UDim2.new(0, 851, 0, 149)
+MFrame.Size = UDim2.new(0, 279, 0, 357)
+
+SpeedBox.Name = "SpeedBox"
+SpeedBox.Parent = MFrame
+SpeedBox.BackgroundColor3 = Color3.fromRGB(239, 243, 255)
+SpeedBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpeedBox.BorderSizePixel = 0
+SpeedBox.Position = UDim2.new(0.0507965647, 0, 0.263397396, 0)
+SpeedBox.Size = UDim2.new(0, 248, 0, 62)
+SpeedBox.Font = Enum.Font.SourceSans
+SpeedBox.Text = "16 or more Speed "
+SpeedBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeedBox.TextScaled = true
+SpeedBox.TextSize = 14.000
+SpeedBox.TextWrapped = true
+
+UICorner.Parent = SpeedBox
+
+ApplyButton.Name = "ApplyButton"
+ApplyButton.Parent = MFrame
+ApplyButton.BackgroundColor3 = Color3.fromRGB(213, 255, 218)
+ApplyButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ApplyButton.BorderSizePixel = 0
+ApplyButton.Position = UDim2.new(0.0651336983, 0, 0.437491626, 0)
+ApplyButton.Size = UDim2.new(0, 241, 0, 51)
+ApplyButton.Font = Enum.Font.SourceSans
+ApplyButton.Text = "Submit ✅"
+ApplyButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ApplyButton.TextScaled = true
+ApplyButton.TextSize = 14.000
+ApplyButton.TextWrapped = true
+
+UICorner_2.Parent = ApplyButton
+
+UICorner_3.Parent = MFrame
+
+Normal.Name = "Normal"
+Normal.Parent = MFrame
+Normal.BackgroundColor3 = Color3.fromRGB(233, 251, 255)
+Normal.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Normal.BorderSizePixel = 0
+Normal.Position = UDim2.new(0.0645164549, 0, 0.60224092, 0)
+Normal.Size = UDim2.new(0, 241, 0, 67)
+Normal.Font = Enum.Font.SourceSans
+Normal.Text = "Normal Walk"
+Normal.TextColor3 = Color3.fromRGB(0, 0, 0)
+Normal.TextScaled = true
+Normal.TextSize = 14.000
+Normal.TextWrapped = true
+
+UICorner_4.Parent = Normal
+
+TextLabel.Parent = MFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(126, 156, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0501792133, 0, 0.806722701, 0)
+TextLabel.Size = UDim2.new(0, 248, 0, 60)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Speed 16 or more. you try 81 speed."
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel.TextYAlignment = Enum.TextYAlignment.Top
+
+TextLabel_2.Parent = MFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(126, 156, 255)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0250896066, 0, 0.100840338, 0)
+TextLabel_2.Size = UDim2.new(0, 272, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Walk Number"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+MFrame2.Name = "MFrame2"
+MFrame2.Parent = ScreenGui
+MFrame2.BackgroundColor3 = Color3.fromRGB(229, 255, 255)
+MFrame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MFrame2.BorderSizePixel = 0
+MFrame2.Position = UDim2.new(0, 551, 0, 142)
+MFrame2.Size = UDim2.new(0, 300, 0, 443)
+
+Button1.Name = "Button1"
+Button1.Parent = MFrame2
+Button1.BackgroundColor3 = Color3.fromRGB(207, 246, 255)
+Button1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button1.BorderSizePixel = 0
+Button1.Position = UDim2.new(0.0533333346, 0, 0.122340426, 0)
+Button1.Size = UDim2.new(0, 268, 0, 57)
+Button1.Font = Enum.Font.SourceSans
+Button1.Text = "Run"
+Button1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button1.TextScaled = true
+Button1.TextSize = 14.000
+Button1.TextWrapped = true
+
+UICorner_5.Parent = Button1
+
+UICorner_6.Parent = MFrame2
+
+Button3.Name = "Button3"
+Button3.Parent = MFrame2
+Button3.BackgroundColor3 = Color3.fromRGB(207, 246, 255)
+Button3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button3.BorderSizePixel = 0
+Button3.Position = UDim2.new(0.0533333346, 0, 0.428502977, 0)
+Button3.Size = UDim2.new(0, 268, 0, 57)
+Button3.Font = Enum.Font.SourceSans
+Button3.Text = "Fast Run"
+Button3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button3.TextScaled = true
+Button3.TextSize = 14.000
+Button3.TextWrapped = true
+
+UICorner_7.Parent = Button3
+
+Button4.Name = "Button4"
+Button4.Parent = MFrame2
+Button4.BackgroundColor3 = Color3.fromRGB(207, 246, 255)
+Button4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button4.BorderSizePixel = 0
+Button4.Position = UDim2.new(0.0533333346, 0, 0.729821384, 0)
+Button4.Size = UDim2.new(0, 268, 0, 57)
+Button4.Font = Enum.Font.SourceSans
+Button4.Text = "Very fast Run"
+Button4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button4.TextScaled = true
+Button4.TextSize = 14.000
+Button4.TextWrapped = true
+
+UICorner_8.Parent = Button4
+
+Button5.Name = "Button5"
+Button5.Parent = MFrame2
+Button5.BackgroundColor3 = Color3.fromRGB(207, 246, 255)
+Button5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button5.BorderSizePixel = 0
+Button5.Position = UDim2.new(0.0533333346, 0, 0.579162121, 0)
+Button5.Size = UDim2.new(0, 268, 0, 57)
+Button5.Font = Enum.Font.SourceSans
+Button5.Text = "Very Run"
+Button5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button5.TextScaled = true
+Button5.TextSize = 14.000
+Button5.TextWrapped = true
+
+UICorner_9.Parent = Button5
+
+TextLabel_3.Parent = MFrame2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(229, 255, 255)
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0, 0, -0.0395136066, 0)
+TextLabel_3.Size = UDim2.new(0, 300, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Walk Button"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+UICorner_10.Parent = TextLabel_3
+
+Button2.Name = "Button2"
+Button2.Parent = MFrame2
+Button2.BackgroundColor3 = Color3.fromRGB(207, 246, 255)
+Button2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button2.BorderSizePixel = 0
+Button2.ClipsDescendants = true
+Button2.Position = UDim2.new(0.0533333346, 0, 0.275421679, 0)
+Button2.Size = UDim2.new(0, 268, 0, 57)
+Button2.Font = Enum.Font.SourceSans
+Button2.Text = "Run2"
+Button2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button2.TextScaled = true
+Button2.TextSize = 14.000
+Button2.TextWrapped = true
+
+UICorner_11.Parent = Button2
+
+NormalW.Name = "NormalW"
+NormalW.Parent = MFrame2
+NormalW.BackgroundColor3 = Color3.fromRGB(221, 221, 221)
+NormalW.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NormalW.BorderSizePixel = 0
+NormalW.Position = UDim2.new(0.0566666685, 0, 0.873523176, 0)
+NormalW.Size = UDim2.new(0, 267, 0, 50)
+NormalW.Font = Enum.Font.SourceSans
+NormalW.Text = "Normal Walk"
+NormalW.TextColor3 = Color3.fromRGB(0, 0, 0)
+NormalW.TextScaled = true
+NormalW.TextSize = 14.000
+NormalW.TextWrapped = true
+
+UICorner_12.Parent = NormalW
+
+-- Scripts:
+
+local function UREIMQJ_fake_script() -- MFrame.MainScript 
+	local script = Instance.new('LocalScript', MFrame)
+
+	local button = script.Parent.ApplyButton
+	local textBox = button.Parent:WaitForChild("SpeedBox")
+	local button2 = script.Parent.Normal
+	local player = game.Players.LocalPlayer
+	local gui = script.Parent.Parent.MFrame
+	local runService = game:GetService("RunService")
+	local player = game:GetService("Players").LocalPlayer
+	local tweenService = game:GetService("TweenService")
+	local UIS = game:GetService("UserInputService")
+	
+	
+	-- Create UIScale
+	local scale = Instance.new("UIScale")
+	scale.Parent = gui
+	
+	-- Base resolution (what you designed your UI for)
+	local baseResolution = Vector2.new(1920, 1080)
+	
+	-- Function to update scale
+	local function updateScale()
+		local camera = workspace.CurrentCamera
+		if not camera then return end
+	
+		local viewportSize = camera.ViewportSize
+		local scaleFactor = math.min(
+			viewportSize.X / baseResolution.X,
+			viewportSize.Y / baseResolution.Y
+		)
+	
+		scale.Scale = scaleFactor
+	end
+	
+	-- Run initially
+	updateScale()
+	
+	-- Update when screen size changes
+	workspace:GetPropertyChangedSignal("CurrentCamera"):Connect(function()
+		updateScale()
+	end)
+	
+	workspace.CurrentCamera:GetPropertyChangedSignal("ViewportSize"):Connect(function()
+		updateScale()
+	end)
+	
+	button.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:WaitForChild("Humanoid")
+	
+		local speed = tonumber(textBox.Text)
+	
+		if speed then
+			humanoid.WalkSpeed = speed
+		else
+			warn("Please enter a valid number!")
+		end
+	end)
+	
+	button2.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:WaitForChild("Humanoid")
+	
+		humanoid.WalkSpeed = 16 -- default is 16
+	end)
+	
+end
+coroutine.wrap(UREIMQJ_fake_script)()
+local function MKPZEE_fake_script() -- MFrame.Drag 
+	local script = Instance.new('LocalScript', MFrame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(MKPZEE_fake_script)()
+local function HWOH_fake_script() -- MFrame2.MainScript2 
+	local script = Instance.new('LocalScript', MFrame2)
+
+	local player = game.Players.LocalPlayer
+	local button1 = script.Parent:WaitForChild("Button1")
+	local button2 = script.Parent:WaitForChild("Button2")
+	local button3 = script.Parent:WaitForChild("Button3")
+	local button4 = script.Parent:WaitForChild("Button4")
+	local button5 = script.Parent:WaitForChild("Button5")
+	local ButtonN = script.Parent:WaitForChild("NormalW")
+	local player = game.Players.LocalPlayer
+	local gui = script.Parent.Parent.MFrame2
+	local runService = game:GetService("RunService")
+	local player = game:GetService("Players").LocalPlayer
+	local tweenService = game:GetService("TweenService")
+	
+	-- Create UIScale
+	local scale = Instance.new("UIScale")
+	scale.Parent = gui
+	
+	-- Base resolution (what you designed your UI for)
+	local baseResolution = Vector2.new(1920, 1080)
+	
+	-- Function to update scale
+	local function updateScale()
+		local camera = workspace.CurrentCamera
+		if not camera then return end
+	
+		local viewportSize = camera.ViewportSize
+		local scaleFactor = math.min(
+			viewportSize.X / baseResolution.X,
+			viewportSize.Y / baseResolution.Y
+		)
+	
+		scale.Scale = scaleFactor
+	end
+	
+	-- Run initially
+	updateScale()
+	
+	-- Update when screen size changes
+	workspace:GetPropertyChangedSignal("CurrentCamera"):Connect(function()
+		updateScale()
+	end)
+	
+	workspace.CurrentCamera:GetPropertyChangedSignal("ViewportSize"):Connect(function()
+		updateScale()
+	end)
+	
+	button1.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:WaitForChild("Humanoid")
+	
+		humanoid.WalkSpeed = 36
+	end)
+	
+	button2.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:WaitForChild("Humanoid")
+		
+		humanoid.WalkSpeed = 47
+	end)
+	
+	button3.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:WaitForChild("Humanoid")
+		
+		humanoid.WalkSpeed = 63
+	end)
+	
+	button4.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:WaitForChild("Humanoid")
+		
+		humanoid.WalkSpeed = 75
+	end)
+	
+	button5.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:WaitForChild("Humanoid")
+		
+		humanoid.WalkSpeed = 93
+	end)
+	
+	ButtonN.MouseButton1Click :Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:WaitForChild("Humanoid")
+		
+		humanoid.WalkSpeed = 16
+	end)
+end
+coroutine.wrap(HWOH_fake_script)()
+local function KTOQ_fake_script() -- MFrame2.Drag 
+	local script = Instance.new('LocalScript', MFrame2)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(KTOQ_fake_script)()
